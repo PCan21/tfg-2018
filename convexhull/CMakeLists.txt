@@ -1,0 +1,6 @@
+cmake_minimuM_required( VERSION 2.8 ) 
+project( cvH )
+find_package(OpenCV REQUIRED)
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(cvH cvH.cpp)
+target_link_libraries(cvH ${OpenCV_LIBS} )

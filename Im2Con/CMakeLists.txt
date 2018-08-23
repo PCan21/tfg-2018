@@ -1,0 +1,6 @@
+cmake_minimuM_required( VERSION 2.8 ) 
+project( Im2Con )
+find_package(OpenCV REQUIRED)
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable(Im2Con Im2Con.cpp)
+target_link_libraries(Im2Con ${OpenCV_LIBS} )
